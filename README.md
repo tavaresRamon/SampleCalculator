@@ -18,7 +18,15 @@ Este aplicativo Shiny foi desenvolvido para facilitar o cálculo do tamanho da a
 
 Contribuições são bem-vindas! Sinta-se à vontade para criar problemas, enviar solicitações de recebimento ou melhorar o aplicativo de qualquer forma que desejar.
 
+## Referências
+
+Para obter mais informações sobre os conceitos e métodos matemáticos usados neste aplicativo, consulte os seguintes recursos:
+
+1. [Estatística Básica](inserir-link-aqui) - Livro de Bussab e Morettin.
+
+Essas fontes fornecem informações detalhadas sobre cálculos de tamanho da amostra e conceitos estatísticos relevantes.
+
 ## Autores
 
-- [Ramon Lima de Oliveira Tavares] - 
+- [Ramon Lima de Oliveira Tavares]
 
