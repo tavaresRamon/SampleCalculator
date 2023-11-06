@@ -22,7 +22,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para criar problemas, envia
 
 Para obter mais informações sobre os conceitos e métodos matemáticos usados neste aplicativo, consulte os seguintes recursos:
 
-1. [Estatística Básica](inserir-link-aqui) - Livro de Bussab e Morettin.
+1. [Estatística Básica]([inserir-link-aqui](https://archive.org/details/BUSSABEMORETTINEstatsticaBBsica6aEdidio1/page/n269/mode/2up)) - Livro de Bussab e Morettin.
 
 Essas fontes fornecem informações detalhadas sobre cálculos de tamanho da amostra e conceitos estatísticos relevantes.
 
