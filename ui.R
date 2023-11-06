@@ -33,7 +33,7 @@ server <- function(input, output) {
     NIVEL_CONFIANCA <- c(1.645, 1.96, 2.33, 2.58)
     
     if (proporcao >= 0 && proporcao < 1) {
-      if (erroAmostralToleravel >= 0 && erroAmostralToleravel <= 0.99) {
+      if (erroAmostralToleravel >= 0 && erroAmostralToleravel < 1) {
         if (tamanhoPopulacao > 0) {
           formula <- (tamanhoPopulacao * (NIVEL_CONFIANCA[nivelDeConfianca] ^ 2) * proporcao * (1 - proporcao)) /
             ((tamanhoPopulacao - 1) * (erroAmostralToleravel^2) + (NIVEL_CONFIANCA[nivelDeConfianca] ^ 2) * proporcao * (1 - proporcao))
@@ -41,10 +41,10 @@ server <- function(input, output) {
           mensagem <- "Informe um tamanho de população maior que 0!"
         }
       } else {
-        mensagem <- "Ajuste corretamente o erro amostral para um valor entre 0 e 100!"
+        mensagem <- "Ajuste corretamente o erro amostral para um valor positivo e menor que 100"
       }
     } else {
-      mensagem <- "Ajuste corretamente o tamanho da proporção para um valor entre 0 e 100!"
+      mensagem <- "Ajuste corretamente o tamanho da proporção para um valor positivo e menor que 100"
     }
     if (exists("mensagem")) {
       output$resultado <- renderPrint({
