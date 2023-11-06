@@ -32,10 +32,26 @@ server <- function(input, output) {
     tamanhoPopulacao <- input$populacao
     NIVEL_CONFIANCA <- c(1.645, 1.96, 2.33, 2.58)
     
-    formula <- (tamanhoPopulacao * (NIVEL_CONFIANCA[nivelDeConfianca] ^ 2) * proporcao * (1 - proporcao)) /
-      ((tamanhoPopulacao - 1) * (erroAmostralToleravel^2) + (NIVEL_CONFIANCA[nivelDeConfianca] ^ 2) * proporcao * (1 - proporcao))
-    
-    if (!is.na(formula)) {
+    if (proporcao >= 0 && proporcao < 1) {
+      if (erroAmostralToleravel >= 0 && erroAmostralToleravel <= 0.99) {
+        if (tamanhoPopulacao > 0) {
+          formula <- (tamanhoPopulacao * (NIVEL_CONFIANCA[nivelDeConfianca] ^ 2) * proporcao * (1 - proporcao)) /
+            ((tamanhoPopulacao - 1) * (erroAmostralToleravel^2) + (NIVEL_CONFIANCA[nivelDeConfianca] ^ 2) * proporcao * (1 - proporcao))
+        } else {
+          mensagem <- "Informe um tamanho de população maior que 0!"
+        }
+      } else {
+        mensagem <- "Ajuste corretamente o erro amostral para um valor entre 0 e 100!"
+      }
+    } else {
+      mensagem <- "Ajuste corretamente o tamanho da proporção para um valor entre 0 e 100!"
+    }
+    if (exists("mensagem")) {
+      output$resultado <- renderPrint({
+        mensagem
+      })
+    }
+    else if (!is.na(formula)) {
       output$resultado <- renderPrint({
         paste("Para uma população de ",tamanhoPopulacao)
         paste("Tamanho da amostra:", round(formula))
