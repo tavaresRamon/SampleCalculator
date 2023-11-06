@@ -5,7 +5,7 @@ rsconnect::setAccountInfo(name='vy20g3-ramon0tavares',
                           secret='<SECRET>')
 
 ui <- fluidPage(
-  theme = shinytheme("superhero"), # Escolha um tema predefinido
+  theme = shinytheme("superhero"),
   titlePanel("Calculadora de Tamanho da Amostra"),
   
   sidebarLayout(
