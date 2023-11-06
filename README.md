@@ -4,8 +4,7 @@ Este é um aplicativo Shiny desenvolvido em R que permite calcular o tamanho da 
 
 ## Acesse o Aplicativo
 
-Você pode acessar o aplicativo através deste [link](https://vy20g3-ramon0tavares.shinyapps.io/CalculadoraAmostral/).
-
+[![Você pode acessar o aplicativo através deste link](https://img.shields.io/badge/Visualizar%20o%20Aplicativo%20Shiny-Clique%20Aqui-blue)]([https://vy20g3-ramon0tavares.shinyapps.io/shiny/](https://vy20g3-ramon0tavares.shinyapps.io/CalculadoraAmostral/))
 ## Como Usar
 
 1. Escolha o tamanho da população, erro amostral, nível de confiança e proporção desejada.
