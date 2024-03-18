@@ -3,7 +3,7 @@
 Este é um aplicativo Shiny desenvolvido em R que permite calcular o tamanho da amostra necessário para uma pesquisa ou estudo com base em uma população, erro amostral, nível de confiança e proporção especificados.
 
 ## Acesse o Aplicativo
-[![Visualize o Aplicativo Shiny](https://img.shields.io/badge/Visualizar%20o%20Aplicativo%20Shiny-Clique%20Aqui-blue)](https://vy20g3-ramon0tavares.shinyapps.io/CalculadoraAmostral/)
+[![Visualize o Aplicativo Shiny]([https://img.shields.io/badge/Visualizar%20o%20Aplicativo%20Shiny-Clique%20Aqui-blue)](https://vy20g3-ramon0tavares.shinyapps.io/CalculadoraAmostral/](https://vy20g3-ramon0tavares.shinyapps.io/calculadoraAmostral/))
 ## Como Usar
 
 1. Escolha o tamanho da população, erro amostral, nível de confiança e proporção desejada.
